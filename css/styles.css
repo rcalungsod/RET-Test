@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; padding: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+canvas { display:block; }
+
+#overlay {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #eef;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  background: linear-gradient(180deg, rgba(10,10,20,0.6), rgba(10,10,20,0.35));
+  padding: 10px 12px;
+  border-radius: 8px;
+  max-width: 320px;
+}
+
+#overlay h1 { margin: 0 0 6px 0; font-size: 16px; }
+#overlay p { margin: 0 0 8px 0; font-size: 13px; color: #cfe; }
+
+#legend { display: flex; flex-wrap: wrap; gap: 6px; }
+.legend-item { display:flex; align-items:center; gap:6px; font-size:13px; }
+.legend-item .swatch { width:14px; height:14px; border-radius:3px; display:inline-block; box-shadow: 0 1px 0 rgba(0,0,0,0.6); }
+
+/* Make sure the canvas covers the page */
+body > canvas, body > div, body > script { position: relative; }
